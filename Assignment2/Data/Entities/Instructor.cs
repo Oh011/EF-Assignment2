@@ -28,7 +28,7 @@ namespace Assignment2.Data.Entities
 
         //-----------------------------------------------
 
-        //Managing Department Relation : one side(not mandatory)
+        //Managing Department Relation 
         [InverseProperty(nameof(Entities.Department.MangerInstructor))]
         public Department ? MangerDepartment { get; set; }
 
@@ -36,7 +36,7 @@ namespace Assignment2.Data.Entities
 
         //-------------------------------------------------------
 
-        //work department relation : one side
+        //work department relation 
 
         [InverseProperty(nameof(Entities.Department.WorkingInstrctors))]
         public Department WorkDepartment { get; set; }
