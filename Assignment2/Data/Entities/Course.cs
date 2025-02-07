@@ -23,7 +23,7 @@ namespace Assignment2.Data.Entities
 
         //-----------------------------------
 
-        //Topic Relation : Many side (Mandatory)
+        //Topic Relation
 
         [InverseProperty(nameof(Entities.Topic.Courses))]
         public Topic Topic { get; set; }
