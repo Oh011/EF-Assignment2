@@ -16,7 +16,7 @@ namespace Assignment2.Data.Entities
 
         //---------------------------------------------------
 
-        //Manger Instructor Relation : one side
+        //Manger Instructor Relation 
 
         [InverseProperty(nameof(Entities.Instructor.MangerDepartment))]
         public Instructor  MangerInstructor { get; set; }
@@ -31,7 +31,7 @@ namespace Assignment2.Data.Entities
 
         //--------------------------------------------------------
 
-        // Students Relation : Many side
+        // Students Relation 
 
         [InverseProperty(nameof(Entities.Student.Department))]
         public ICollection<Student> Students { get; set; } = new HashSet<Student>();
